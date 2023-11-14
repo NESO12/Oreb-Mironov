@@ -21,7 +21,7 @@ class Form(QMainWindow, Ui_MainWindow):
         if self.flag:
             qp = QPainter()
             qp.begin(self)
-            color = QColor([randint(0, 255) for _ in range(3)])
+            color = QColor(255, 255, 0)
             qp.setPen(color)
             qp.setBrush(color)
             r = randint(10, 100)
